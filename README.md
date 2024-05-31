@@ -1,17 +1,19 @@
-# Generador de Contraseñas
+# Generador de Passwords
 
-Este proyecto es un generador de contraseñas a partir de dos palabras ingresadas por el usuario. Permite varias opciones de personalización para fortalecer la contraseña generada, incluyendo la sustitución de caracteres, la alternancia entre mayúsculas y minúsculas, y la adición de caracteres adicionales.
+Este proyecto realizado para practicar con lenguaje Python, es un generador de Passwords a partir de dos palabras ingresadas por el usuario. 
+
+Permite varias opciones de personalización para fortalecer la password generada, incluyendo la sustitución de caracteres, la alternancia entre mayúsculas y minúsculas, y la adición de caracteres adicionales.
 
 ## Características
 
-- **Sustitución de caracteres**: Sustituye ciertos caracteres por otros para hacer la contraseña más segura (e.g., 'a' por '@', 'i' por '1').
-- **Alternancia de mayúsculas y minúsculas**: Alterna entre mayúsculas y minúsculas en la contraseña generada.
+- **Sustitución de caracteres**: Sustituye ciertos caracteres por otros para hacer la password más segura (e.g., 'a' por '@', 'i' por '1').
+- **Alternancia de mayúsculas y minúsculas**: Alterna entre mayúsculas y minúsculas en la password generada.
 - **Mezcla de caracteres**: Mezcla los caracteres de dos palabras ingresadas.
 - **Adición de caracteres adicionales**: Agrega caracteres adicionales seleccionados aleatoriamente de dos conjuntos predefinidos.
 
 ## Uso
 
-Para usar este generador de contraseñas, simplemente ejecuta el script `generador_password.py` o ejecuta `start_windows.bat` o `start_bash.sh` según tu sistema operativo y sigue las instrucciones en la consola.
+Para usar este generador de passwords, simplemente ejecuta el script `generador_password.py` o ejecuta `start_windows.bat` o `start_bash.sh` según tu sistema operativo y sigue las instrucciones en la consola.
 
 ### Ejecución
 
