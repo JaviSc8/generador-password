@@ -1,5 +1,23 @@
 import generador_password as gen
 
+def genera_password(palabra, sustituir, alternar, caracteres_extra=2):
+    if sustituir == "s":
+        palabra = gen.sustituir_caracteres(palabra)
+
+    if alternar == "s":
+        palabra = gen.alternar_mayusculas(palabra)
+
+    caracteres_impares = caracteres_extra % 2
+    
+    if caracteres_extra > 1:
+        parte_extra = gen.generar_caracteres_adicionales(caracteres_extra) + gen.generar_caracteres_adicionales(caracteres_impares)
+    else:
+        parte_extra = gen.generar_caracteres_adicionales(caracteres_extra)
+
+    final_password = palabra + parte_extra
+
+    return final_password
+
 def main():
     print("Generador de Password a partir de dos palabras")
     palabra1 = input("Introduzca la primera palabra: ").strip().lower()
@@ -18,10 +36,10 @@ def main():
     print(f"Caracteres adicionales seleccionados: {str(caracteres_extra)}")
 
     if mezclar == "n":
-        password = gen.genera_password(palabra1, sustituir, alternar, caracteres_extra // 2) + gen.genera_password(palabra2, sustituir, alternar, caracteres_extra - caracteres_extra // 2)
+        password = genera_password(palabra1, sustituir, alternar, caracteres_extra // 2) + genera_password(palabra2, sustituir, alternar, caracteres_extra - caracteres_extra // 2)
     else:
         palabra = gen.mezclar_caracteres(palabra1, palabra2)
-        password = gen.genera_password(palabra, sustituir, alternar, caracteres_extra)
+        password = genera_password(palabra, sustituir, alternar, caracteres_extra)
 
     print(f"Password generada: {password}")
     print("Guardela en lugar seguro. Cuando lo desee, presione Enter para salir")

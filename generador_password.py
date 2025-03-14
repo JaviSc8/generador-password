@@ -53,21 +53,3 @@ def solicitar_entrada(prompt, opciones, default):
         elif entrada == '':
             return default
         print(f"Entrada inválida. Por favor ingrese {' o '.join(opciones)}")
-
-def genera_password(palabra, sustituir, alternar, caracteres_extra=2):
-    if sustituir == "s":
-        palabra = sustituir_caracteres(palabra)
-
-    if alternar == "s":
-        palabra = alternar_mayusculas(palabra)
-
-    caracteres_impares = caracteres_extra % 2
-    
-    if caracteres_extra > 1:
-        parte_extra = generar_caracteres_adicionales(caracteres_extra) + generar_caracteres_adicionales(caracteres_impares)
-    else:
-        parte_extra = generar_caracteres_adicionales(caracteres_extra)
-
-    final_password = palabra + parte_extra
-
-    return final_password
