@@ -1,2 +1,2 @@
 @echo off
-python generador_password.py
+python cli.py

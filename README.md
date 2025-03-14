@@ -13,7 +13,7 @@ Permite varias opciones de personalización para fortalecer la password generada
 
 ## Uso
 
-Para usar este generador de passwords, simplemente ejecuta el script `generador_password.py` o ejecuta `start_windows.bat` o `start_bash.sh` según tu sistema operativo y sigue las instrucciones en la consola.
+Para usar este generador de passwords, simplemente ejecuta el script `cli.py` o ejecuta `start_windows.bat` o `start_bash.sh` según tu sistema operativo y sigue las instrucciones en la consola.
 
 ### Ejecución
 

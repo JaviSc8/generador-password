@@ -1,3 +1,3 @@
 #!/bin/bash
-python3 generador_password.py
+python3 cli.py
 
