@@ -15,7 +15,9 @@ Permite varias opciones de personalización para fortalecer la password generada
 
 Para usar este generador de passwords, simplemente ejecuta el script `cli.py` o ejecuta `start_windows.bat` o `start_bash.sh` según tu sistema operativo y sigue las instrucciones en la consola.
 
-### Ejecución
+Si prefieres usarlo directamente desde web puedes hacerlo en https://generador-password-javisc8.streamlit.app
+
+### Ejecución (CLI)
 
 1. Clona este repositorio:
     ```bash
@@ -28,11 +30,11 @@ Para usar este generador de passwords, simplemente ejecuta el script `cli.py` o 
 3. Ejecuta el script:
     Windows, ejecuta start_windows.bat o introduce en una consola:
     ```bash
-    python generador_password.py
+    python cli.py
     ```
     Linux, ejecuta start_linux.sh o introduce en un terminal:
     ```bash
-    python3 generador_password.py
+    python3 cli.py
     ```
 
 ### Instrucciones
